@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Roboto Font CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <!-- Custom Sigma CSS -->
+    <link href="css/sigma.css" rel="stylesheet" type="text/css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+     <!-- Charts JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <!-- Custom Sigma JS -->
+    <script type="text/javascript" src="js/sigma.min.js"></script>
+    <!-- For Android/ios Browser -->
+    <script>
+      $(function () {
+        var nua = navigator.userAgent
+        var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
+        if (isAndroid) {
+          $('select.form-control').removeClass('form-control').css('width', '100%')
+        }
+      })
+    </script>
+    <title>Sigma | Dashboard</title>
+  </head>
+  <!-- Dashboard Body-->
+  <body style="background-color:#eaeaea;">
+  <!-- Navbar Static -->
+    <nav class="navbar navbar-light bg-light" style="border-bottom: 0.5px solid #e9dfc2;">
+    <img src="images/logo.png" height="30px" width="auto;" alt="">
+      <div class="form-inline my-2 my-lg-0">
+        <button type="button" class="btn btn-link">
+          <img src="images/profile.jpg" alt="profile" class="img-thumbnail rounded-circle" style="height:32px;">
+        </button>
+        <h6>Martin Thomas</h6>
+      </div>
+    </nav>
+  <!-- End Of Navbar Static -->
+  <!-- Navbar Sticky -->
+    <nav class="navbar-expand-lg sticky-top navbar-light bg-light navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="accounts.html">Accounts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="transactions.html">Transactions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="budgets.html">Budgets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Goals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Insights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="settings.html">Settings</a>
+            </li>
+            <li class="nav-item dropright">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarMore" role="button"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               More
+             </a>
+             <div class="dropdown-menu" aria-labelledby="navbarMore">
+               <a class="dropdown-item" href="#">Get Help</a>
+               <a class="dropdown-item" href="#">Privacy Policy</a>
+               <div class="dropdown-divider"></div>
+               <a class="dropdown-item" href="#">About Sigma</a>
+             </div>
+           </li>
+         </ul>
+        </div>
+        <div class="btn-group dropdown">
+          <button type="button" class="btn fas fa-exchange-alt btn-outline-primary" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="margin-left:10px;">
+          </button>
+          <div class="dropdown-menu" style="width:300px;">
+            <form class="px-3 py-2">
+             <h5>Quick Transfer</h5><br>
+             <div class="form-group">
+               <label for="exampleFormControlSelect1">Transfer From Account</label>
+               <select class="form-control" id="exampleFormControlSelect1">
+                 <option>Ithmaar Current A/C</option>
+                 <option>BBK Savings A/C</option>
+                 <option>KCB Deposit A/C</option>
+               </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Transfer To Account</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Ithmaar Current A/C</option>
+                  <option>BBK Savings A/C</option>
+                  <option>KCB Deposit A/C</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleDropdownFormPassword1">Enter Amount</label>
+                <input type="text" class="form-control" id="exampleDropdownFormPassword1" placeholder="BHD">
+              </div>
+              <button type="submit" class="btn btn-secondary">Close</button>
+              <button type="submit" class="btn btn-primary">Transfer</button>
+            </form>
+          </div>
+        </div>
+        <div class="btn-group dropdown">
+          <button type="button" class="btn fas fa-bell btn-outline-primary" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="margin-left:10px;">
+          </button>
+          <div class="dropdown-menu" style="width:300px;">
+            <form class="px-3 py-2">
+              <h5>Notifications</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">You have consumed 80% of your Budget</li>
+                <li class="list-group-item">2 Jul 19 - Sync Sucessful</li>
+                <li class="list-group-item">You have new insights</li>
+                <li class="list-group-item">June Summary now available</li>
+                <li class="list-group-item">Account Added Succesfully</li>
+              </ul>
+            </form>
+          </div>
+        </div>
+        <button type="button" class="btn btn-outline-primary fas fa-sync-alt" style="margin-left:10px;"></button>
+        <button type="button" class="btn btn-outline-primary fas fa-sign-out-alt" style="margin-left:10px;"></button>
+      </nav>
+        <!-- End of Navbar Sticky -->
+        <!-- Dashboard -->
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Net Worth Card -->
+          <div class="col-lg-8">
+            <div class="my-3 p-3 bg-white rounded box-shadow" style="min-height: 367px;">
+              <h5 class="border-bottom border-primary pb-2 mb-0">Net Worth</h5><br>
+              <h6 style="text-align:center;">Your Current Balance</h6>
+              <h4 style="text-align:center;">BHD 950.000</h4><br>
+              <div class="progress" style="height:20px;">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="24"
+                  aria-valuemin="0" aria-valuemax="100" style="width:24%">
+                </div>
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="76"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 76%">
+                </div>
+              </div><br>
+              <div class="row">
+              <div class="col-3 d-flex justify-content-around">
+                <i id="headingOne" class="fas fa-circle btn-link" data-toggle="collapse"
+                  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:#8d7633;"></i>
+                <i id="headingTwo" class="fas fa-circle btn-link" data-toggle="collapse"
+                  data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="color:#8d7633;"></i>
+                <i id="headingThree" class="fas fa-circle btn-link" data-toggle="collapse"
+                  data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" style="color:#8d7633;"></i>
+              </div>
+              <div class="col-9 d-flex justify-content-around">
+                <i id="headingFour" class="fas fa-circle btn-link" data-toggle="collapse"
+                  data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" style="color:#5a5a5a;"></i>
+                <i id="headingFive" class="fas fa-circle btn-link" data-toggle="collapse"
+                  data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive" style="color:#5a5a5a;"></i>
+                <i id="headingSix" class="fas fa-circle btn-link" data-toggle="collapse"
+                  data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix" style="color:#5a5a5a;"></i>
+              </div>
+            </div><br>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Ithmaar Current A/C<br>Current Balance: BHD 425.000
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    BBK Savings A/C<br>Current Balance: BHD 250.000
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    KCB Deposit A/C<br>Current Balance: BHD 250.000
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Ithmaar Credit Card<br>Credit Balance: BHD 1,540.000
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Ithmaar Car Loan<br>Loan Amount: BHD 1,425.000
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Ithmaar Personal Loan<br>Loan Amount: BHD 2,425.000
+                  </div>
+                </div>
+              </div>
+            </div>
+            <small class="d-block text-right mt-3">
+              <a href="#">Last Synced : 23 Hours Ago</a>
+            </small>
+          </div>
+        </div>
+      <!-- End of Net Worth -->
+      <!-- Safe To Spend Card -->
+        <div class="col-lg-4">
+          <div class="my-3 p-3 bg-white rounded box-shadow" style="min-height: 367px;">
+            <h5 class="border-bottom border-primary pb-2 mb-0">Safe To Spend</h5><br>
+            <canvas id="safe_spend"></canvas><br>
+            <h6 style="text-align:center;">Upcoming Spending</h6>
+            <h4 style="text-align:center;">BHD 67.000</h4>
+          </div>
+        </div>
+      <!-- End Of Safe To Spend -->
+    </div>
+    <!-- End Of Top Row -->
+    <div class="row">
+    <!-- Monthly Category Expenditure Chart -->
+      <div class="col-lg-7">
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+          <h5 class="border-bottom border-primary pb-2 mb-0">Spending by Category</h5><br>
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h6 style="text-align:center;">July 2019</h6>
+                <div class="col-lg-11 col-centered">
+                  <canvas id="category_spend" height="103px"></canvas>
+                </div>
+                <h6 style="text-align:center;">Total Spending</h6>
+                <h4 style="text-align:center;">BHD 67.000</h4>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    <!-- End Of Monthly Expenditure -->
+    <!-- Monthly Budget Chart-->
+      <div class="col-lg-5">
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+          <h5 class="border-bottom border-primary pb-2 mb-0">Budgeted this month</h5><br>
+          <canvas id="current_budget" height="129px"></canvas><br>
+          <h6 style="text-align:center;">Days Remaining</h6>
+          <h3 style="text-align:center;">7</h3>
+        </div>
+      </div>
+    <!-- End of Monthly Budget -->
+    </div>
+    <!-- End of Row 2 -->
+  </div>
+  <div class="col-lg-7">
+  <!-- Recent Transactions Table -->
+    <div class="my-3 p-3 bg-white rounded box-shadow">
+      <h5 class="pb-2 mb-0">Recent Transactions</h5>
+        <table class="table">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">When</th>
+              <th scope="col">Account</th>
+              <th scope="col">Info</th>
+              <th scope="col">Category</th>
+              <th scope="col" style="text-align:right;">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1 Day Ago</td>
+              <th scope="row">Ithmaar Current AC</th>
+              <td>Amazon.Inc</td>
+              <td><i class="fas fa-utensils"></i></td>
+              <td style="text-align:right; color:red;">25.000</td>
+            </tr>
+            <tr>
+              <td>6 Days Ago</td>
+              <th scope="row">Ithmaar Credit Card</th>
+              <td>Mcdonalds BH</td>
+              <td><i class="fas fa-utensils"></i></td>
+              <td style="text-align:right; color:green;">3.200</td>
+            </tr>
+            <tr>
+              <td>7 Days Ago</td>
+              <th scope="row">Ithmaar Current AC</th>
+              <td>Careem LLC.</td>
+              <td><i class="fas fa-futbol"></i></td>
+              <td style="text-align:right; color:red;">46.999</td>
+            </tr>
+            <tr>
+              <td>7 Days Ago</td>
+              <th scope="row">Ithmaar Current AC</th>
+              <td>Talabat BH</td>
+              <td><i class="fas fa-hamburger"></i></td>
+              <td style="text-align:right; color:red;">1.100</td>
+            </tr>
+            <tr>
+              <td>8 Days Ago</td>
+              <th scope="row">Ithmaar Credit Card</th>
+              <td>Vox Cineco Ltd.</td>
+              <td><i class="fas fa-utensils"></i></td>
+              <td style="text-align:right; color:green;">4.670</td>
+            </tr>
+          </tbody>
+        </table>
+        <h6 style="text-align:center;" class="btn-link" role="button" aria-pressed="true" href="transactions.html">View All Transactions</h6>
+      </div>
+    <!-- End of Recent Transactions -->
+    </div>
+  </div>
+  <!-- Page Footer -->
+  <section id="footer">
+		 <div class="container">
+			 <div class="row">
+			  <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center">
+				  <p class="h6">&copy Almoayed Technologies SPC.<a class="text-green ml-2">Sigma v0.3.1</a></p>
+			  </div>
+		  </div>
+	   </div>
+	 </section>
+   <!-- End Of Footer -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/popper.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/dash-charts.js"></script>
+</body>
+</html>
