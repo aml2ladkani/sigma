@@ -171,3 +171,19 @@ input:checked + .slider:before {
 float: none;
 margin: 0 auto;
 }
+
+.popover {
+    text-align: relative;
+    margin-left: 15px;
+    margin-right: 27px;
+    margin-top: 19px;
+    width: 250px;
+    height: 98px;
+}
+
+
+.popover .arrow {
+    left: 50%; !important;
+    margin-top: -16px;
+    margin-left: -11px;
+}
