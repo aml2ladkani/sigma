@@ -45,101 +45,100 @@
     </nav>
     <!-- End of Navbar -->
     <!-- Navbar Sticky -->
-      <nav class="navbar-expand-lg sticky-top navbar-light bg-light navbar">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <nav class="navbar-expand-lg sticky-top navbar-light bg-light navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="accounts.html">Accounts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="transactions.html">Transactions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="budgets.html">Budgets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Goals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Insights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="settings.html">Settings</a>
+          </li>
+          <li class="nav-item dropright">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarMore" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarMore">
+               <a class="dropdown-item" href="#">Get Help</a>
+               <a class="dropdown-item" href="#">Privacy Policy</a>
+               <div class="dropdown-divider"></div>
+               <a class="dropdown-item" href="#">About Sigma</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="btn-group dropdown">
+        <button type="button" class="btn fas fa-exchange-alt btn-outline-primary" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" style="margin-left:10px;">
         </button>
-          <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link" href="dashboard.html">Dashboard</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="accounts.html">Accounts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="transactions.html">Transactions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="budgets.html">Budgets</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Goals</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Insights</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="settings.html">Settings</a>
-              </li>
-              <li class="nav-item dropright">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarMore" role="button"
-                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 More
-               </a>
-               <div class="dropdown-menu" aria-labelledby="navbarMore">
-                 <a class="dropdown-item" href="#">Get Help</a>
-                 <a class="dropdown-item" href="#">Privacy Policy</a>
-                 <div class="dropdown-divider"></div>
-                 <a class="dropdown-item" href="#">About Sigma</a>
-               </div>
-             </li>
-           </ul>
-          </div>
-          <div class="btn-group dropdown">
-            <button type="button" class="btn fas fa-exchange-alt btn-outline-primary" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false" style="margin-left:10px;">
-            </button>
-            <div class="dropdown-menu" style="width:300px; margin-left: -100px;">
-              <form class="px-3 py-2">
-               <h5>Quick Transfer</h5><br>
-               <div class="form-group">
-                 <label for="exampleFormControlSelect1">Transfer From Account</label>
-                 <select class="form-control" id="exampleFormControlSelect1">
-                   <option>Ithmaar Current A/C</option>
-                   <option>BBK Savings A/C</option>
-                   <option>KCB Deposit A/C</option>
-                 </select>
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">Transfer To Account</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Ithmaar Current A/C</option>
-                    <option>BBK Savings A/C</option>
-                    <option>KCB Deposit A/C</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="exampleDropdownFormPassword1">Enter Amount</label>
-                  <input type="text" class="form-control" id="exampleDropdownFormPassword1" placeholder="BHD">
-                </div>
-                <button type="submit" class="btn btn-secondary">Close</button>
-                <button type="submit" class="btn btn-primary">Transfer</button>
-              </form>
+        <div class="dropdown-menu" style="width:300px; margin-left: -100px;">
+          <form class="px-3 py-2">
+           <h5>Quick Transfer</h5><br>
+           <div class="form-group">
+             <label for="exampleFormControlSelect1">Transfer From Account</label>
+             <select class="form-control" id="exampleFormControlSelect1">
+               <option>Ithmaar Current A/C</option>
+               <option>BBK Savings A/C</option>
+               <option>KCB Deposit A/C</option>
+             </select>
             </div>
-          </div>
-          <div class="btn-group dropdown">
-            <button type="button" class="btn fas fa-bell btn-outline-primary" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false" style="margin-left:10px;">
-            </button>
-            <div class="dropdown-menu" style="width:300px; margin-left: -150px;">
-              <form class="px-3 py-2">
-                <h5>Notifications</h5>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">You have consumed 80% of your Budget</li>
-                  <li class="list-group-item">2 Jul 19 - Sync Sucessful</li>
-                  <li class="list-group-item">You have new insights</li>
-                  <li class="list-group-item">June Summary now available</li>
-                  <li class="list-group-item">Account Added Succesfully</li>
-                </ul>
-              </form>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Transfer To Account</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Ithmaar Current A/C</option>
+                <option>BBK Savings A/C</option>
+                <option>KCB Deposit A/C</option>
+              </select>
             </div>
-          </div>
-          <button type="button" class="btn btn-outline-primary fas fa-sync-alt" style="margin-left:10px;"></button>
-          <a href="index.html" class="btn btn-outline-primary fas fa-sign-out-alt" style="margin-left:10px;" role="button"></a>
-        </nav>
-          <!-- End of Navbar Sticky -->
+            <div class="form-group">
+              <label for="exampleDropdownFormPassword1">Enter Amount</label>
+              <input type="text" class="form-control" id="exampleDropdownFormPassword1" placeholder="BHD">
+            </div>
+            <button type="submit" class="btn btn-secondary">Close</button>
+            <button type="submit" class="btn btn-primary">Transfer</button>
+          </form>
+        </div>
+      </div>
+      <div class="btn-group dropdown">
+        <button type="button" class="btn fas fa-bell btn-outline-primary" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" style="margin-left:10px;">
+        </button>
+        <div class="dropdown-menu" style="width:300px; margin-left: -150px;">
+          <form class="px-3 py-2">
+            <h5>Notifications</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">You have consumed 80% of your Budget</li>
+              <li class="list-group-item">2 Jul 19 - Sync Sucessful</li>
+              <li class="list-group-item">You have new insights</li>
+              <li class="list-group-item">June Summary now available</li>
+              <li class="list-group-item">Account Added Succesfully</li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <button type="button" class="btn btn-outline-primary fas fa-sync-alt" style="margin-left:10px;"></button>
+      <a href="index.html" class="btn btn-outline-primary fas fa-sign-out-alt" style="margin-left:10px;" role="button"></a>
+    </nav>
+    <!-- End of Navbar Sticky -->
     <!-- Transactions -->
     <div class="container">
       <div class="my-3 p-3 bg-white rounded box-shadow">
@@ -154,12 +153,149 @@
           </div>
           <!-- Table Buttons -->
           <div class="col-lg-3" style="text-align:right;">
-            <button type="button" class="btn btn-outline-primary fas fa-plus" style="margin-left:5px;"></button>
-            <button type="button" class="btn btn-outline-primary fas fa-edit" style="margin-left:5px;"></button>
-            <button type="button" class="btn btn-outline-primary fas fa-trash" style="margin-left:5px;"></button>
-            <button type="button" class="btn btn-outline-primary fas fa-download" style="margin-left:5px;"></button>
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#addtransaction">
+              <i class="fas fa-plus"></i>
+            </button>
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#edittransaction">
+              <i class="fas fa-edit"></i>
+            </button>
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#deletetransaction">
+              <i class="fas fa-trash"></i>
+            </button>
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#downloadtransaction">
+              <i class="fas fa-download"></i>
+            </button>
           </div>
         </div><br>
+        <!-- Table Button Modals -->
+        <div class="modal fade" id="addtransaction" tabindex="-1" role="dialog" aria-labelledby="addtransactionLabel"
+         aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="addtransactionLabel">Add Cash Transaction</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form class="col-md-8 col-centered form-signin text-center">
+                  <select class="selectpicker" data-style="btn">
+                    <option>Select Account</option>
+                    <option>Ithmaar Current A/C</option>
+                    <option>BISB Savings A/C</option>
+                  </select><br><br>
+                    <select class="selectpicker" data-style="btn">
+                      <option>Select Category</option>
+                      <option>Food</option>
+                      <option>Travel</option>
+                    </select><br><br>
+                      <select class="selectpicker" data-style="btn">
+                        <option>Select Type</option>
+                        <option>Credit</option>
+                        <option>Debit</option>
+                      </select><br><br>
+                      <select class="selectpicker" data-style="btn">
+                        <option>Select Date</option>
+                        <option>Credit</option>
+                        <option>Debit</option>
+                      </select><br><br>
+                      <input class="form-control" type="text" placeholder="Transaction Description"><br>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">BHD</div>
+                        </div>
+                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Transaction Amount">
+                      </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button type="button" class="btn btn-link" data-dismiss="modal">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="edittransaction" tabindex="-1" role="dialog" aria-labelledby="edittransactionLabel"
+           aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="edittransactionLabel">Edit Transaction Category</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                  <form class="col-md-8 col-centered form-signin text-center">
+                    <h4 style="text-align:center;">0 Transactions Selected</h4><br>
+                      <select class="selectpicker" data-style="btn">
+                        <option>Select Category</option>
+                        <option>Food</option>
+                        <option>Travel</option>
+                      </select><br><br>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Save Changes</button>
+                  <button type="button" class="btn btn-link" data-dismiss="modal">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="deletetransaction" tabindex="-1" role="dialog" aria-labelledby="deletetransactionLabel"
+           aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="deletetransactionLabel">Delete Transactions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="col-md-8 col-centered form-signin text-center">
+                      <h4 style="text-align:center;">0 Transactions Selected</h4><br>
+                      <h6 style="text-align:center;">Are you sure you want to delete?</h6>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Yes! Delete</button>
+                    <button type="button" class="btn btn-link" data-dismiss="modal">No. Go Back</button>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="modal fade" id="downloadtransaction" tabindex="-1" role="dialog" aria-labelledby="downloadtransactionLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="downloadtransactionLabel">Download Transaction</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <form class="col-md-6 col-centered form-signin text-center">
+                  <label><h5>Select Download Format</h5></label>
+                    <div class="custom-control custom-checkbox text-center">
+                      <input type="checkbox" class="custom-control-input" id="sms1">
+                        <label class="custom-control-label" for="PDF">PDF</label>
+                    </div><br>
+                    <div class="custom-control custom-checkbox text-center">
+                      <input type="checkbox" class="custom-control-input" id="email1">
+                      <label class="custom-control-label" for="XLS">XLS</label>
+                    </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Download</button>
+                <button type="button" class="btn btn-link" data-dismiss="modal">Back</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Search Filter -->
         <div class="collapse" id="searchFilter"><br>
           <div class="card card-body">
@@ -225,6 +361,7 @@
         <table class="table">
           <thead class="thead-light">
             <tr>
+              <th scope="col"></th>
               <th scope="col">When</th>
               <th scope="col">Account</th>
               <th scope="col">Info</th>
@@ -234,6 +371,10 @@
           </thead>
           <tbody>
             <tr>
+              <td><div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="checkbox">
+                  </div>
+              </td>
               <td>1 Day Ago</td>
               <th scope="row">Ithmaar Current AC</th>
               <td>Amazon.Inc</td>
@@ -241,6 +382,10 @@
               <td style="text-align:right; color:red;">25.000</td>
             </tr>
             <tr>
+              <td><div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="checkbox">
+                  </div>
+              </td>
               <td>6 Days Ago</td>
               <th scope="row">Ithmaar Credit Card</th>
               <td>Mcdonalds BH</td>
@@ -248,6 +393,10 @@
               <td style="text-align:right; color:green;">3.200</td>
             </tr>
             <tr>
+              <td><div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="checkbox">
+                  </div>
+              </td>
               <td>7 Days Ago</td>
               <th scope="row">Ithmaar Current AC</th>
               <td>Careem LLC.</td>
@@ -255,6 +404,10 @@
               <td style="text-align:right; color:red;">46.999</td>
             </tr>
             <tr>
+              <td><div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="checkbox">
+                  </div>
+              </td>
               <td>7 Days Ago</td>
               <th scope="row">Ithmaar Current AC</th>
               <td>Talabat BH</td>
@@ -262,6 +415,10 @@
               <td style="text-align:right; color:red;">1.100</td>
             </tr>
             <tr>
+              <td><div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="checkbox">
+                  </div>
+              </td>
               <td>8 Days Ago</td>
               <th scope="row">Ithmaar Credit Card</th>
               <td>Vox Cineco Ltd.</td>
